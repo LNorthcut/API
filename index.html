@@ -8,31 +8,35 @@
   <link href="https://fonts.googleapis.com/css?family=Carrois+Gothic+SC" rel="stylesheet">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 </head>
-<body id="wholeThing">
+<body>
 
 <div class="jumbotron" id="header">
-  <img id="topImageL" src="assets/images/giphy-left.gif">
-  <img id="topImageR" src="assets/images/giphy-right.gif">
-  <h1>For the Love of Netflix</h1>
-  <h4>Click the buttons to display GIPHYs of your favorite Netflix shows<br>Click the GIPHYs to pause and play<br>Search to add more buttons!</h4>
+  
+  <h1>What you asked for</h1>
+  <h4>Tap me to see your results</h4>
 </div>
 
-<form class="form-inline" id="netflixSearch">
+<form class="form-inline" id="giphySearch">
   <div class="form-group">
-    <label for="netflixInput">Search for a Netflix Show</label>
-    <input type="text" id="netflixInput">
+    <label for="giphyInput">What are you looking for?</label>
+    <input type="text" id="giphyInput">
   </div>
-  <!-- Button triggers show to be added -->
-  <input id="addShow" type="submit" value="submit">
+
+  <input id="addGiphy" type="submit" value="submit">
 </form>
 
 <div class="row">
   <div class="container">
     <div class="btn-group inline pull-left">
-      <button class="btn btn-primary" id="show" data-search="Stranger Things">Stranger Things</button>
-      <button class="btn btn-primary" id="show" data-search="Narcos">Narcos</button>
-      <button class="btn btn-primary" id="show" data-search="Luke Cage">Luke Cage</button>
-      <button class="btn btn-primary" id="show" data-search="Jessica Jones">Jessica Jones</button>
+
+        <button class="btn btn-primary" id="show" data-search="Bugs">Bugs</button>
+
+        <button class="btn btn-primary" id="show" data-search="Dogs">Dogs</button>
+   
+        <button class="btn btn-primary" id="show" data-search="Lizard">Lizard</button>
+   
+        <button class="btn btn-primary" id="show" data-search="Owls">Owls</button>
+      
 
       <div id="myButtons"></div>
     </div> <!--end of button group -->
